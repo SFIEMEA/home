@@ -1,0 +1,242 @@
+*{
+   padding: 0;
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+ }
+.contactus{
+    background-color: rgb(21, 16, 16);
+    width:100%;
+    height: auto;
+  
+    color:white;
+}
+.contactcontent{
+    margin:40px;
+   margin-bottom: 0;
+    padding-top: 5px;
+}
+.contactalign{
+    display: flex;
+    justify-content: space-around;
+}
+.sfiabout{
+   margin-left: 200px; 
+   margin-right: 200px; 
+   line-height: 40px;
+}
+.sfiemeaunit{
+    margin-left: 200px; 
+    margin-right: 200px; 
+    color:red;  
+}
+.content{
+    margin-left: 200px; 
+    margin-right: 200px;  
+}
+.grild1{
+    border:1px solid blue;
+}
+.grild2{
+    border:1px solid blue;
+}
+.grild3{
+    border:1px solid blue;
+}
+.backgroundimage{
+  width:100%;
+    height:500px;   
+}
+.sfimenuheading{
+ margin-left: 20px;
+}
+.grild{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+}  
+.grild1{
+   
+    width:auto;
+    height: auto;
+}
+.grild2{
+   
+    width:auto;
+    height: auto;
+}
+.h2{
+    color:rgb(16, 16, 103);
+}
+.grild3{
+   
+    width:auto;
+    height: auto;
+}
+.grildd{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  
+}
+.grild21{
+    background-color: #11a3d4;
+    width:auto;
+    height: auto;
+    padding: 20px;
+}
+.grild22{
+    background-color: #c21f81;
+    width:auto;
+    height: auto;
+    padding: 20px;
+}
+.grild23{
+    background-color: #c31739;
+    width:auto;
+    height: auto;
+    padding: 20px;
+}
+.grild24{
+    background-color: #158f87;
+    width:auto;
+    height: auto;
+    padding: 20px;
+}
+header{
+   background-color: black;
+    width:100%;
+    height: 60px; 
+   display: flex;
+   justify-content: space-between;
+   color:white;
+   align-items: center;
+}
+header ul{
+display: flex;
+list-style: none;
+}
+header ul li{
+width: 100px;
+align-items:center;
+}
+#img{
+background-color: white;
+display: none;
+}
+.menu{
+    display: none;
+}
+.q{
+    font-size: 24px;
+   
+}
+.btn{
+    background-color: rgb(35, 77, 214);
+    color:white;
+    text-decoration: none;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+    border-radius: 20px;;
+}
+.videomain{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+}
+
+
+@media(max-width:420px){
+    .backgroundimage{
+        width:100%;
+          height:500px;    
+      } 
+#img{
+    display: block;
+    margin-right: 10px;
+}
+.grildd{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+header ul li{
+    display:block;
+    text-align:center;
+    line-height:40px;
+    width:100%;
+}
+header ul{
+    position:fixed;
+display: block;
+    width:100%;
+    height:100vh;
+    background-color:#608E9D;
+    top:60px;
+    text-align:center;
+    left:-100%;
+    transition:1s;
+}
+
+#menu:checked~ul{
+    left:0;
+}
+.content{
+    margin:40px;
+}
+.sfiemeaunit{
+    margin:0;
+    text-align: center;
+    color:red;
+}
+.sfiabout{
+    background-image:linear-gradient(to bottom,#FFFFFF,#E6E6FA,#E5E5E5,#FFFFFF);
+    width:100;
+    margin: 0;
+}
+.sfiabout p{
+    margin:40px;
+    line-height: 30px;
+}
+.grild{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+} 
+.grild1{
+    border:none;
+}
+.grild2{
+    border:none;
+}
+.grild3{
+    border:none;
+}
+.grild21{
+    font-size: 13px;
+}
+.grild22{
+    font-size: 13px;
+}
+.grild23{
+    font-size: 13px;
+}
+.grild24{
+    font-size: 13px;
+}
+.videomain{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+}
+.contactalign{
+    display: block;
+ }
+}
