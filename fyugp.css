@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+header{
+    background-color: black;
+     width:100%;
+     height: 60px; 
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    align-items: center;
+ }
+ header ul{
+ display: flex;
+ list-style: none;
+ }
+ header ul li{
+ width: 100px;
+ align-items:center;
+ }
+ header ul li a{
+    text-decoration: none;
+    color: white;
+ }
+ #img{
+ background-color: white;
+ display: none;
+ }
+ .menu{
+     display: none;
+ }
+ .sfimenuheading{
+    margin-left: 20px;
+   }
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+ @media(max-width:420px){
+    #img{
+        display: block;
+        margin-right: 10px;
+    }
+    header ul li{
+        display:block;
+        text-align:center;
+        line-height:40px;
+        width:100%;
+    }
+    header ul{
+        position:fixed;
+    display: block;
+        width:100%;
+        height:100vh;
+        background-color:#608E9D;
+        top:60px;
+        text-align:center;
+        left:-100%;
+        transition:1s;
+    }
+    
+    #menu:checked~ul{
+        left:0;
+    }
+    .container{
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .textsize{
+        font-size:13px;
+        line-height: 23px;
+    }
+ }
